@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FileFox</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Untitled design (3).png");
+  background-color: black;
+  min-height: 100%;
+}
+.w3-bar{
+    background-color: #FFD700 !important;
+}
+.w3-bar .w3-button {
+  padding: 16px;
+  background-color: #FFD700 !important;
+  padding-left: 0px;
+}
+.w3-button{
+    background-color: #FFD700 !important;
+    color: black !important;
+}
+.b{
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 15px;
+  vertical-align: top !important;
+}
+.logo1{
+  display: inline-flex !important;
+}
+span .w3-jumbo w3-hide-small1 highlight{
+  color: #FFD700 !important;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <div class="logo1">
+      <img src="box.png" class="b"><a href="#home" class="w3-bar-item w3-button w3-wide"><b>ileFox</b></a>
+    </div>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small bu">
+      <a href="#about" class="w3-bar-item w3-button"><b>Features</b></a>
+      <a href="#team" class="w3-bar-item w3-button"><b>Team</b></a>
+      <a href="#work" class="w3-bar-item w3-button"><b>About</b></a>
+      <a href="#contact" class="w3-bar-item w3-button"><b>Contact</b></a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <br></br>
+    <br></br>
+    <span class="w3-jumbo w3-hide-small">Welcome to Universe of </span>
+        <br><span class="w3-jumbo w3-hide-small">File Storage!</span><br>
+    <span class="w3-large">Driven by the Super Power, Blockchain.</span>
+    <p><a href="#about" class="w3-button w3-padding-large w3-large w3-margin-top w3-hover-opacity-off">Get Started</a></p>
+  </div> 
+  
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">Features of FileFox</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-file w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Large Files</p>
+      <p>Allows to store large files of any size. Get ready for infinite storage space!</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-lock w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Secure</p>
+      <p>Powered by super secure technology, Blockchain. Your files will be 100% Tamper-Proof!</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Transparency</p>
+      <p>Shares your files in transparent environment, you have your own eyes locked on the files.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-smile-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">User Friendly</p>
+      <p>Easy to use Interface. Dont wait secure and store your files right now!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-black" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Designed by Tricon</h3>
+      <p>Tricon is company made with love, dedication, hardwork and teamwork.</p>
+      <p><a href="#work" class="w3-button w3-black">More about Tricon</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-right" src="Tricon.png" alt="Buildings" width="400" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">The Team</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding " style="margin-top:64px">
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="kavya.jpg" alt="John" style="width:100%" height="50%">
+        <div class="w3-container">
+          <h3>Kavya Naik</h3>
+          <p class="w3-opacity">Backend Developer</p>
+          <p>I believe in teamwork and dedication which leads to success.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><a style="text-decoration: none" href="https://www.linkedin.com/in/kavya-naik-946b10214/?original_referer=" >Follow</a></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="arnica.jpg" alt="Jane" style="width:100%" height="50%">
+        <div class="w3-container">
+          <h3>Arnica Patil</h3>
+          <p class="w3-opacity">Frontend Developer</p>
+          <p>Developing a product is experience to be lived from client vision.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><a style="text-decoration: none" href="https://www.linkedin.com/in/arnica-patil-02118b217/?original_referer=" >Follow</a></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="k.png" alt="Mike" style="width:100%" height="50%">
+        <div class="w3-container">
+          <h3>Kinnari Patil</h3>
+          <p class="w3-opacity">Backend Developer</p>
+          <p>Every work requires honesty from ones side, thats when good things are crafted.</p>
+          <p><button class="w3-button w3-light-grey w3-block"></i><a href="https://www.linkedin.com/in/kinnari-patil/" style="text-decoration: none">Follow</a></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-black" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">Contact</h3>
+  <p class="w3-center w3-large">Get in touch, We are happy to respond you!</p>
+  <div style="margin-top:48px">
+    <!--<i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Mumbai, India</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>+91 8149933287</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>akk@tricon.com</p>-->
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+            Send Message <i class="fa fa-paper-plane"></i> 
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by Tricon</p>
+</footer>
+ 
+
+
+</body>
+</html>
